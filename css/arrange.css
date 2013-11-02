@@ -1,0 +1,17 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.panel {
+	background-color : #eee;
+	padding-top : 20px;
+	padding-bottom : 20px;
+	box-shadow : 1px 1px 5px #888888;
+	border-radius : 5px;
+}
+
+#surface {
+    width : 600px;
+    height : 500px;
+}

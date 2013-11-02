@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Arrange</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/arrange.css" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="/img/favicon.ico"/>
+  	<script src="js/lib/jquery-1.10.2.js"></script>
+  	<script src="js/lib/bootstrap.min.js"></script>
+  	<script src="js/lib/svg.js"></script>
+  	<script src="js/grid.js"></script>
+  	<script src="js/energy.js"></script>
+  	<script src="js/arrange.js"></script>
+  	<script src="js/surface.js"></script>
+  	<script src="js/arrangeDemo.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="span9 panel" id="surface">
+            </div>
+            <div class="span3">
+                <label for="pn">No. of Points</label>
+                <input id="pn" type="text" placeholder="#"/>
+                <label for="cn">No. of Connections</label>
+                <input id="cn" type="text" placeholder="# less than P * P"/>
+                <br>
+                <br>
+                <button class="btn" id="gen">Generate</button>
+                <button class="btn" id="arr">Arrange</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="messageModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <h3 id="messageModalTitle"></h3>
+        </div>
+        <div id="messageModalBody" class="modal-body"></div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Ok</button>
+        </div>
+    </div>
+
+  </body>
+</html>
