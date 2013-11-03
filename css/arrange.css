@@ -3,12 +3,24 @@ body {
     padding-bottom: 20px;
 }
 
-.panel {
-	background-color : #eee;
-	padding-top : 20px;
-	padding-bottom : 20px;
-	box-shadow : 1px 1px 5px #888888;
-	border-radius : 5px;
+.surface-panel {
+	background-color: #eee;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 1px 1px 5px #888888;
+	border-radius: 5px;
+}
+
+.input-panel {
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.space-top {
+    margin-top: 20px;
 }
 
 #surface {
