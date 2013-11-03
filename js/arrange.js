@@ -1,14 +1,14 @@
-var arrange = (function(arr) {
+var arrange = (function(arrange) {
 
-    arr.arrange = function(points, positions) {
+    arrange.arrange = function(points, positions) {
         var map = toMap(points, positions);
-        var en = arr.energy(points, positions);
+        var en = arrange.energy(points, positions);
 
         // Gradient Decent
         for(var i=0; i<20; i++) {
             var newMap = randomNeighbor(points, map);
             var newPositions = toPositions(points, newMap);
-            var newEnergy = arr.energy(points, newPositions);
+            var newEnergy = arrange.energy(points, newPositions);
 
             console.log(i + " : " + newEnergy);
 
@@ -113,6 +113,6 @@ var arrange = (function(arr) {
         return positions;
     };
 
-    return arr;
+    return arrange;
 
 }(arrange || {}));

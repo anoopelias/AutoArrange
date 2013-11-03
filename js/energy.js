@@ -1,6 +1,6 @@
-var arrange = (function(arr) {
+var arrange = (function(arrange) {
 
-    arr.energy = function(points, positions) {
+    arrange.energy = function(points, positions) {
         var avgLen = avgConnLen(points, positions);
         var avgPoints = avgPointsOnLine(points, positions);
 
@@ -91,6 +91,6 @@ var arrange = (function(arr) {
 
     };
 
-    return arr;
+    return arrange;
 
 }(arrange || {}));
