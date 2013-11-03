@@ -20,21 +20,40 @@
         <div class="row">
             <div class="span9 surface-panel" id="surface">
             </div>
-            <div class="span3 input-panel">
-                <div class="row-fluid">
-                    <label for="pn" class="span8">Points</label>
-                    <input id="pn" class="span4" type="number" placeholder="#" value="0" min="0", max="1000"/>
-                </div>
-                 <div class="row-fluid">
-                    <label for="pn" class="span8">Connections</label>
-                    <input id="cn" class="span4" type="number" placeholder="# less than P * P" value="0" min="0", max="1000"/>
-                </div>
-                <div class="row-fluid space-top">
-                    <div class="offset1 span5">
-                        <button class="btn" id="gen">Generate</button>
+            <div class="span3">
+                <div class="input-panel">
+                    <div class="row-fluid">
+                        <label for="pn" class="span8">Points</label>
+                        <input id="pn" class="span4" type="number" placeholder="#" value="0" min="0", max="1000"/>
                     </div>
-                    <div class="offset1 span5">
-                        <button class="btn" id="arr">Arrange</button>
+                     <div class="row-fluid">
+                        <label for="pn" class="span8">Connections</label>
+                        <input id="cn" class="span4" type="number" placeholder="# less than P * P" value="0" min="0", max="1000"/>
+                    </div>
+                    <div class="row-fluid space-top">
+                        <div class="offset1 span5">
+                            <button class="btn" id="gen">Generate</button>
+                        </div>
+                        <div class="offset1 span5">
+                            <button class="btn" id="arr">Arrange</button>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div id="more" class="offset7 span5">
+                             <a data-toggle="collapse" data-target="#more-div" >more <i class="icon-chevron-down"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="more-div" class="more-panel collapse">
+                    <div class="row-fluid">
+                        <table class="table span12">
+                            <tr>
+                                <td>1 x 2</td>
+                            <tr>
+                            </tr>
+                                <td>4 x 10</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>

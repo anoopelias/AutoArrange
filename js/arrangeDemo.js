@@ -6,11 +6,14 @@
         $('#gen').click(generate);
         $('#arr').click(arrange);
 
+        $('#more-div').on('hidden', hidden);
+
     });
 
     var arrange = function(e) {
        surface.arrange(); 
     };
+
     var generate = function(e) {
         if(validate()) {
             console.log('validation pass');
@@ -19,6 +22,10 @@
         } else {
             message('Validation Error', 'Invalid Inputs');
         }
+    };
+
+    var hidden = function(e) {
+        $('#more-div').addClass('no-border');
     };
 
     var validate = function() {
@@ -42,6 +49,7 @@
        $('#messageModalTitle').html(title);
        $('#messageModalBody').html(message);
        $('#messageModal').modal(); 
-    }
+    };
+
 
 }(jQuery));

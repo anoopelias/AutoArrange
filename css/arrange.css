@@ -15,12 +15,32 @@ body {
     border: 1px solid #ddd;
     padding: 10px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-radius: 5px;
 }
 
+.more-panel {
+    border: 1px solid #ddd;
+}
+
+.no-border {
+    border: 0px solid #ddd;
+}
+
 .space-top {
-    margin-top: 20px;
+    margin-top: 5px;
+}
+
+#more {
+    position: relative;
+    top: 11px;
+    min-height: 19px;
+    border: 1px solid #ccc;
+    padding-left: 16px;
+    padding-right: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	background-color: #eee;
 }
 
 #surface {
