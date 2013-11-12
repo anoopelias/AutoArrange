@@ -24,7 +24,7 @@ body {
 }
 
 .no-border {
-    border: 0px solid #ddd;
+    border: 0;
 }
 
 .space-top {
@@ -35,9 +35,9 @@ body {
     position: relative;
     top: 11px;
     min-height: 19px;
+    width: 20px;
     border: 1px solid #ccc;
-    padding-left: 16px;
-    padding-right: 2px;
+    padding-left: 2px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 	background-color: #eee;
